@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Products</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+     body{ background-image: url(PHOTO/photo6.jpg);}
+     section{
+         text-align: center;
+         border-bottom: 2px solid rgba(103, 5, 80, 0.94);
+         border-top: 2px solid rgba(103, 5, 80, 0.94);
+         padding-left: 15%;
+         padding-right: 15%;
+        }
+      p {
+         font-family: cursive;
+         color:#990099;
+         font-size: 15px;
+         }
+      h1,h2,h3,h4,h5,h6
+         {
+         font-family: cursive;
+         color:darkslategrey;
+         font-size:30px;    
+         }
+     .container-1{
+         display :flex;
+         justify-content: space-between;
+         }
+     .container-2{
+         display:flex;
+         justify-content:center;
+         }
+    .container-3{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: auto;
+         text-align: center;
+         background-color: #EFC0F3;
+         width: 100%;
+         height:auto;
+         border-radius: 40px;
+         box-shadow: 9px 9px 16px rgb(163,177.198,0.6),-10px -10px 15px white;
+          } 
+     #box-1{
+         order:1;
+         }
+     #box-2{
+         order:2;
+         flex-basis: 80%;
+         align-items: center;
+         }
+    #box-3{
+         order:1;
+         border-right: 5px solid rgba(181, 9, 148, 0.89);
+         padding-left:40px;
+         }
+    #box-3:hover{ box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);}
+    #box-4{
+        order:2;
+        padding-right: 40px;
+        justify-content: center;
+         }
+     ul{list-style-type:none; }
+     li { float:left;text-align: center;}
+     li a, .dropbtn{
+         padding-left: 20px;
+         padding-right: 20px;
+         background: rgba(193, 48, 148, 0.45);
+         color:rgb(57, 12, 159);
+         border-radius: 25px;
+         font-size:20px;
+         font-family: cursive;
+         box-shadow: 9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+         text-decoration: none;
+         text-align: center;   
+        }
+      li a:hover, .dropdown:hover .dropbtn
+            {
+             box-shadow: 7px 7px 14px rgb(163,177,198,0.8),-8px -8px 11px grey;
+            }
+      li.dropdown{display: inline-block;}
+      .dropdown{position:relative;display: inline-block;}
+      .dropdown-content
+             {
+            display:none;
+            position:absolute;
+            background-color: rgba(225, 36, 232, 0.2);
+            min-width: 160px;
+            box-shadow:9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+            z-index: 1; 
+              }
+     .dropdown:hover .dropdown-content{display:block;}
+</style>
+</head>
+    <body>
+        
+           <div class="container-1">
+          
+             <div id="box-1"><img src="PHOTO/logo2.png"  width="200"  height="200" alt="image here"> </div> 
+             <div id="box-2" ><img  src="PHOTO/Products.png" width="800" height="200" alt="image here"></div>
+           
+         </div><br>
+        <div class="container2">
+        <ul>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="Galery.html">Gallery</a></li>
+            <li> <a href="Visit%20us.html">Visit us</a></li>
+            <li class="dropdown">
+                  <a href="javascript:void(0)" class="bropbtn">More Info</a>
+                     <div class="dropdown-content">
+                       <a href="About%20us.html">About Us</a><br>
+                       <a href="index.php">Contact Us</a>
+                     </div>
+             </li>
+         </ul>
+        </div><br> <br>
+    <section>
+        <h1>Products made by us </h1>
+        <p>Our company deals with the preparation of lavender products such as oils, soap, cocktails, perfumes, lavender bouquets, etc.</p>
+        <p>These are produced in compliance with environmental regulation</p>
+        <p>Our products are sold only in our store but we can also offer delivery by post with payment at destination</p>
+        <p>For contact details <a href="index.php">click here</a> </p>
+    </section>
+    <section>
+        <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/clear-wine-glass-with-brown-liquid-and-green-leaves-4487978.jpg">
+                     <img src="PHOTO/clear-wine-glass-with-brown-liquid-and-green-leaves-4487978.jpg"  width="200"  height="200" alt="image here"></a>
+            </div>
+             <div id="box-4">
+                  <h2>A glass of wine</h2>
+                  <p> Wine is also a product of ours to which we have added a lavender aroma</p>
+             </div>        
+        </div><br>
+        
+        <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/pexels-roman-odintsov-4551617.jpg">
+                     <img src="PHOTO/pexels-roman-odintsov-4551617.jpg"  width="200"  height="200" alt="image here"></a>
+            </div>
+             <div id="box-4">
+                  <h2>A glass of lavender dessert</h2>
+                  <p>This dessert is one of our specialties</p>
+                  <p> Prepared according to a unique recipe</p>
+             </div>        
+        </div><br>
+        
+         <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/lavender-and-massage-oils-3865676.jpg">
+                     <img src="PHOTO/lavender-and-massage-oils-3865676.jpg"  width="200"  height="200" alt="image here"></a>
+            </div>
+             <div id="box-4">
+                  <h2>Lavender oil</h2>
+                  <p>For a velvety skin and a natural hydration</p>
+             </div>        
+        </div><br>
+        
+         <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/pexels-valeria-boltneva-965984.jpg">
+                     <img src="PHOTO/pexels-valeria-boltneva-965984.jpg"  width="200"  height="200" alt="image here" ></a>
+            </div>
+             <div id="box-4">
+                  <h2>Car perfume</h2>
+             </div>        
+        </div><br>
+         <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/selective-focus-photo-of-bottle-with-cork-lid-932577.jpg">
+                     <img src="PHOTO/selective-focus-photo-of-bottle-with-cork-lid-932577.jpg"  width="200"  height="200" alt="image here"></a>
+            </div>
+             <div id="box-4">
+                  <h2>Perfume</h2>
+                  <p>Indicate to be used on skin</p>
+             </div>        
+        </div><br>
+        
+        <div class="container-3">
+             <div id="box-3">
+                 <a target="_blank" href="PHOTO/purple-petaled-flowers-2746155.jpg">
+                     <img src="PHOTO/purple-petaled-flowers-2746155.jpg"  width="200"  height="200" alt="image here"></a>
+            </div>
+             <div id="box-4">
+                  <h2>A bouquet of flowers</h2>
+                  <p> Each of our clients goes home with such a bouquet</p>
+             </div>        
+        </div><br>
+    </section>
+        <footer>
+		<div><p style ="text-align: center">All rigts reserved@2020</p>
+         </div>
+    </footer>
+    </body>
+</html>

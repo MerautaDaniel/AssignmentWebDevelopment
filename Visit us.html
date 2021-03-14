@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Visit us </title>
+    <style>
+             body{background-image: url(PHOTO/photo6.jpg);}
+             .container-1{
+                display:flex;
+                justify-content:space-between;
+                }
+             .container-2{ 
+                 display: flex;
+                 justify-content: space-around;
+                 flex-wrap: wrap;}
+             
+             .container-3{
+               height: auto;
+               flex-basis: 40%;
+               text-align: center;
+              }
+             .container-4{
+               height: auto;
+               flex-basis: 40%;
+               text-align: center;
+               }
+        
+             table{width: 100%;text-align: center;}
+             table, th, td{
+               border:2px solid  rgba(232, 160, 232, 0.27) ;
+               border-radius: 4px;
+             }
+             th, td {
+              font-family: cursive;
+              color:#990099;
+              font-size: 15px;  
+             }
+             h1,h2,h3,h4,h5,h6
+             {
+              font-family: cursive;
+              color:darkslategrey;
+              font-size:30px;    
+             }
+             p    
+             {
+              font-family: cursive;
+              color:#990099;
+              font-size: 15px;
+             }
+            
+            ul
+             {
+              list-style-type:none;
+              padding-bottom:5px;
+              margin-bottom: 5px;      
+              overflow:visible;
+              }
+            li
+              { 
+              float:left;
+              text-align: center;
+              }
+            li a, .dropbtn{
+               padding-left: 20px;
+               padding-right: 20px;
+               background: rgba(193, 48, 148, 0.45);
+               color:rgb(57, 12, 159);
+               border-radius: 25px;
+               font-size:20px;
+               font-family: cursive;
+               box-shadow: 9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+               text-decoration: none;
+               text-align: center;   
+             }
+            li a:hover, .dropdown:hover .dropbtn
+             {
+             box-shadow: 7px 7px 14px rgb(163,177,198,0.8),-8px -8px 11px grey;
+             }
+            
+            li.dropdown{display: inline-block;}
+            .dropdown{position:relative;display: inline-block;}
+            .dropdown-content
+             {
+              display:none;
+              position:absolute;
+              background-color: rgba(225, 36, 232, 0.2);
+              min-width: 160px;
+              box-shadow:9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+              z-index: 1; 
+              }
+        .dropdown:hover .dropdown-content{display:block;}
+    </style>
+</head> 
+    
+<body>
+   <div class="container-1">
+       <div> <img src="PHOTO/logo2.png" width="200" height="200" alt="image here"></div>
+       <div> <img src="PHOTO/visit%20us.png" width="800" height="200" alt="image here"> </div>
+   </div> 
+     <div >
+        <ul>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="Galery.html">Gallery</a></li>
+            <li> <a href="Products.html">Products</a></li>
+            <li class="dropdown">
+                  <a href="javascript:void(0)" class="bropbtn">More Info</a>
+                     <div class="dropdown-content">
+                       <a href="About%20us.html">About Us</a><br>
+                       <a href="index.php">Contact Us</a>
+                     </div>
+             </li>
+         </ul>
+        </div><br> 
+   <div class="container-2" >
+   <div class="container-3">
+    <h3>Our opening hours:</h3>
+    <table>
+      <tr>  <th>Week Days:</th>
+            <th>Open:</th>
+            <th>Close:</th>
+      </tr>
+      <tr>
+            <td>Monday</td>
+            <td> 7.00</td>
+            <td> 19.00</td>
+      </tr> 
+        <tr>
+            <td>Tuesday</td>
+            <td>Close</td>
+      </tr>  
+        <tr>
+            <td>Wednesday</td>
+            <td> 7.00</td>
+            <td> 19.00</td>
+      </tr>
+        <tr>
+            <td>Thursday</td>
+            <td> 7.00</td>
+            <td> 19.00</td>
+      </tr>
+        <tr>
+            <td>Friday</td>
+            <td> 7.00</td>
+            <td> 19.00</td>
+      </tr>  
+        <tr>
+            <td>Saturday</td>
+            <td> 9.00</td>
+            <td> 19.00</td>
+      </tr> 
+        <tr>
+            <td>Sunday</td>
+            <td> 9.00</td>
+            <td> 19.00</td>
+      </tr>   
+       </table>
+    </div>
+    <div class="container-4">
+       <h3>Were we are:</h3>
+        <p> UK, Tamworth </p><p>Lichefield rd ,10356</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19370.105779708916!2d-1.7015136499999999!3d52.63715729999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1598106351329!5m2!1sen!2suk" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+    </div>
+    </div><br>
+</body>
+ <footer>
+       <div><p style ="text-align: center">All rigts reserved@2020</p>
+        </div>
+    </footer>
+
+</html>

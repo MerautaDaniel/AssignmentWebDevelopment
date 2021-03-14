@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>About us</title>
+        <style>
+            body{ background-image: url(PHOTO/photo6.jpg);}
+            .header{
+              display: flex;
+              height: 200px;
+              justify-content: space-between;
+            }
+            
+            #box-1{
+              height: auto;
+              width: auto;  
+            }
+            #box-2{
+              text-align: center;
+             }
+            #box-3{
+              height:400px;
+              display: flex;
+              justify-content: space-between;
+            }
+              h1,h2,h3,h4,h5,h6
+             {
+              font-family: cursive;
+              color:darkslategrey;
+              font-size:30px;    
+             }
+             p    
+             {
+              font-family: cursive;
+              color:#990099;
+              font-size: 15px;
+             }
+            
+            ul
+             {
+              list-style-type:none;
+              padding-bottom:5px;
+              margin-bottom: 5px;      
+              overflow:visible;
+              }
+            li
+              { 
+              float:left;
+              text-align: center;
+              }
+            li a, .dropbtn{
+               padding-left: 20px;
+               padding-right: 20px;
+               background: rgba(193, 48, 148, 0.45);
+               color:rgb(57, 12, 159);
+               border-radius: 25px;
+               font-size:20px;
+               font-family: cursive;
+               box-shadow: 9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+               text-decoration: none;
+               text-align: center;   
+             }
+            li a:hover, .dropdown:hover .dropbtn
+             {
+             box-shadow: 7px 7px 14px rgb(163,177,198,0.8),-8px -8px 11px grey;
+             }
+            
+            li.dropdown{display: inline-block;}
+            .dropdown{position:relative;display: inline-block;}
+            .dropdown-content
+             {
+              display:none;
+              position:absolute;
+              background-color: rgba(225, 36, 232, 0.2);
+              min-width: 160px;
+              box-shadow:9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+              z-index: 1; 
+              }
+        .dropdown:hover .dropdown-content{display:block;}
+        </style>
+    </head>
+    <body>
+      <div class="header">
+          <div id="box-1"><img src="PHOTO/logo2.png" width="200" height="200" alt="image here" > </div>
+          <div id="box-2"><img src="PHOTO/About%20us.png" width="1000" height="200" alt="image here"></div><br>
+        </div>
+        
+      <div class="nav" >
+        <ul>
+            <li> <a href="Galery.html">Gallery</a></li>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="Visit Us.html">Visit us</a></li>
+            <li class="dropdown">
+                  <a href="javascript:void(0)" class="bropbtn">More Info</a>
+                     <div class="dropdown-content">
+                       <a href="About us">About Us</a><br>
+                       <a href="index.php">Contact Us</a>
+                     </div>
+            </li></ul> 
+      </div><br>
+      
+        <h1 style="text-align: center;">Hill top Lavender Fields who are we ? </h1>
+        <p>We are a company that mainly cultivates lavender, but we also produce various types of lavender products.<br>
+            Respecting the environment is one of our division. The treatment of the land as well as of the culture is done only with natural products.<br>We recently open a restaurant next to the area dedicated to visitors, where only local products are served.</p>
+        <div id ="box-3">
+            <img src="PHOTO/photo7.jpg" height="400px" width="700" alt="image here" >
+            <img src="PHOTO/pexels-nightingale-art-house-12519.jpg" height="400px" width="700" alt="image here">
+        </div>
+        
+    </body>
+   <br> <footer>
+       <div><p style ="text-align: center">All rigts reserved@2020</p>
+        </div>
+    </footer>
+
+</html>

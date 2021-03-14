@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Galery</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            body{
+                background-image: url(PHOTO/photo6.jpg);}
+            
+            div{
+                border-radius: 5px;
+                border:2px solid  rgba(232, 160, 232, 0.27) ; 
+                height:auto;
+              }
+             button{
+                background: #ECF0F3;
+                box-sizing: border-box;
+                color:#499DF5;
+                border-radius: 25px;
+                font-size:12px;
+                font-family: Verdana;
+                margin-top: 15px;
+                box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -10px -10px 15px white;
+                border:none;
+             }
+             p    
+             {
+               font-family: cursive;
+               color:#990099;
+               font-size: 15px;
+             }
+            ._video{
+                text-align: center; 
+            }
+            .container-1{
+                display :flex;
+                justify-content: space-between;
+            }
+            .container-2{
+                display:flex;
+                justify-content:center;
+                  }
+            .container-3{
+                display:flex;
+                justify-content:space-around;
+            }
+            .container-4{
+                height:auto;
+                display: flex;
+                flex-wrap: wrap;
+                
+               
+            }
+             .container-5{
+                margin: 40px auto 0 auto;
+                height:auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+             .container-6{
+                margin: 40px auto 0 auto;
+                height:auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            #box-1{
+                order:1;
+                 }
+            #box-2{
+                order:2;
+                flex-basis: 80%;
+                align-items: center;
+            }
+            #box-3{
+                flex:1;
+                order:2;
+             }
+            #box-4{
+                flex:1;
+                order:1;
+                margin: auto ;
+                text-align: right;
+                flex-wrap: wrap;
+             }
+            #box-5{
+               margin:auto 0 auto;
+            }
+            #box-6{
+                flex-basis: 25%;
+                align-content: flex-end;
+            }
+            #box-7{
+                order: 4;
+                flex-basis: 22%;
+                
+            }
+            #box-8 {
+                order:2;
+                text-align: center;
+                flex-basis: 18%;
+            }
+            box-9  {
+               
+                order:1;
+                flex-basis: 22%;
+            }
+            #box-10 {
+                order:3;
+                text-align: center;
+                flex-basis: 18%;
+            }
+             #box-11{
+                text-align: center;
+                order:1;
+                 flex-basis: 30%;
+            }
+            #box-12{
+                flex-basis: 30%;
+                order:3;
+                text-align: center;   
+            }
+             #box-13{
+                flex-basis: 30%;
+                order:2;
+                 text-align: center;}
+            #box-14{
+                flex-basis: 30%;
+                order:1;
+                text-align: center;
+            }
+            #box-15{
+                flex-basis: 60%;
+                order:2;
+                text-align: center;
+            }
+           ul
+            {
+           list-style-type:none;
+            }
+         li
+            { 
+            float:left;text-align: center;
+            }
+          li a, .dropbtn{
+               padding-left: 20px;
+               padding-right: 20px;
+               background: rgba(193, 48, 148, 0.45);
+               color:rgb(57, 12, 159);
+               border-radius: 25px;
+               font-size:20px;
+               font-family: cursive;
+               box-shadow: 9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+               text-decoration: none;
+               text-align: center;   
+             }
+         li a:hover, .dropdown:hover .dropbtn
+            {
+             box-shadow: 7px 7px 14px rgb(163,177,198,0.8),-8px -8px 11px grey;
+            }
+        li.dropdown{display: inline-block;}
+               .dropdown{position:relative;display: inline-block;}
+         .dropdown-content
+             {
+            display:none;
+            position:absolute;
+            background-color: rgba(225, 36, 232, 0.2);
+            min-width: 160px;
+            box-shadow:9px 9px 15px rgb(163,177,198,0.3), -10px -10px 15px white;
+            z-index: 1; 
+              }
+        .dropdown:hover .dropdown-content{display:block;}
+        .container2{
+            height: 50px;
+            padding:inherit; 
+            }
+           
+        </style>
+    </head>
+    
+    <body >
+       <!-- Header and Menu -->
+         <div class="container-1">
+          
+             <div id="box-1"><img src="PHOTO/logo2.png"  width="150"  height="150" alt="image here"> </div> 
+             <div id="box-2" ><img  src="PHOTO/Galery.png" width="800" height="150" alt="image here"></div>
+           
+         </div><br>
+        <div class="container2">
+        <ul>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="Products.html">Products</a></li>
+            <li> <a href="Visit%20us.html">Visit us</a></li>
+            <li class="dropdown">
+                  <a href="javascript:void(0)" class="bropbtn">More Info</a>
+                     <div class="dropdown-content">
+                       <a href="About%20us.html">About Us</a><br>
+                       <a href="index.php">Contact Us</a>
+                     </div>
+             </li>
+         </ul>
+        </div><br> 
+        
+       <!-- Body of the Galery--> 
+        
+      <!--Container-2-->
+  
+        
+      <div class="_video"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="620">
+    <source src="video/Lavender%20Fields%20of%20the%20Provence,%20France%20(4K%20Stock).mp4" type="video/mp4">
+ 
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 760; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 420; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 620; 
+} 
+</script> 
+  
+      <div class="container-2">
+          <div id ="box-6"><img  src="PHOTO/pexels-alina-vilchenko-2101704.jpg" width="600" height="300" alt="image here" ></div>
+          <div id="box-5">
+              <p>A good way to relax.<br>Reading in a peaceful ambient help us to eliminate some stress acumulated durring the week </p>
+          </div>
+      </div><br>
+        
+      <!-- Container-3-->
+        
+      <div class="container-3">
+            <div id="box-3"><img src="PHOTO/pexels-jonathan-petersson-1198507.jpg"width="800" height="400" alt="image here" ></div>
+            <div id="box-4">
+                <p>A beautiful picture made by one of our customer, Jonathan.</p>
+                <p> The sunset and our farm </p>
+            </div>
+      </div><br>
+        
+      <!--Some products-->  
+      <!--Container-4--> 
+        
+          <p style="text-align: center">Some of our products </p>
+          <div class="container-4">
+              <div id="box-7"><img src="PHOTO/photo11.jpg" height="300" alt="image here" ></div>
+              <div id="box-8"> <img src="PHOTO/lavender-and-massage-oils-3865676.jpg"  height="300" alt="image here"></div>
+              <div id="box-9"><img src="PHOTO/glass-of-lavender-dessert-placed-on-table-near-menu-4551617.jpg" height="300" alt="image here"> </div>
+               <div id="box-10"><img src="PHOTO/photo9.jpg" height="300" alt="image here"></div>
+          </div>
+        
+      <!--Container-5-->
+        <div class="container-5">
+            <div id = "box-11"><img src="PHOTO/pexels-magicbowls-3543912.jpg" height="300" alt="image here"></div>
+            <div id = "box-12"><img src="PHOTO/pexels-valeria-boltneva-965984.jpg" height="300" alt="image here"></div>
+            <div id = "box-13"><img src="PHOTO/photo4.jpg" height="300" alt="image here"></div>
+        </div>
+        
+        <!--Photos from custumers-->
+        
+        <p style="text-align: center">Photos from our custumers</p>
+        <div class="container-6">
+            <div id="box-14"><img src="PHOTO/photo12.jpg" height="300" alt="image here">
+                             <p>Anegelica's photo</p>
+            </div>
+            <div id="box-15"><img src="PHOTO/pexels-brandon-randolph-2042161.jpg" height="300" width="90%" alt="image here" >
+                             <p>Brandon send us his pic by email</p></div>
+        </div>
+    </body>
+    
+   <br> <footer>
+       <div><p style ="text-align: center">All rigts reserved@2020</p>
+        </div>
+    </footer>
+
+</html>
